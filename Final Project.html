@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project 2.0</title>
+    <style>
+      body {
+        background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+      }
+
+      .spinningFruitLeft {
+        float: left;
+        display: inline;
+        width: 200px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 20px;
+      }
+
+      .spinningFruitRight {
+        float: right;
+        display: inline;
+        width: 200px;
+        height: 200px;
+        margin-right: 100px;
+        margin-top: 20px;
+      }
+
+      h1 {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        font-size: 90px;
+        font-weight: 90px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.98);
+        text-shadow: 2px 2px 8px rgb(138, 43, 226);
+        min-width: 300px;
+      }
+      h2 {
+        font-size: 40px;
+        font-weight: 50px;
+        text-align: center;
+        font-style: italic;
+        color: rgba(138, 43, 226, 0.7);
+        text-shadow: 2px 2px 8px rgba(138, 43, 226, 0.5);
+        max-width: 100%;
+        padding-bottom: 40px;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: 50px;
+        text-align: center;
+        color: rgba(138, 43, 226, 0.7);
+        margin: 50px;
+      }
+      .altColor {
+        color: rgba(138, 43, 226, 0.7);
+        font-style: italic;
+        font-weight: bolder;
+      }
+
+      .spindriftYellow {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        border-radius: 50px;
+        border: 5px dotted white;
+        box-shadow: 10px 10px 40px rgba(138, 43, 226, 0.5);
+      }
+      .emojis {
+        font-size: 50px;
+      }
+
+      .partyEmojis {
+        font-size: 50px;
+      }
+
+      p {
+        text-align: center;
+        margin: 100px 150px 50px 150px;
+        color: rgba(138, 43, 226, 0.9);
+        font-weight: 100;
+        font-size: 25px;
+        line-height: 40px;
+      }
+
+      .description {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 10px 10px 40px rgba(138, 43, 226, 0.3);
+      }
+
+      .movingCan {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 70px;
+        padding-left: 60px;
+        width: 30%;
+        max-width: 300px;
+      }
+
+      .cheers {
+        display: block;
+        margin: 0 auto;
+        border-radius: 50px;
+        max-width: 500px;
+        margin-bottom: 50px;
+        margin-top: 100px;
+        border: 5px dotted white;
+        box-shadow: 10px 10px 40px rgba(138, 43, 226, 0.5);
+      }
+
+      button {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        padding: 30px 40px 30px 40px;
+        font-size: 23px;
+        font-style: italic;
+        color: white;
+        background: rgba(138, 43, 226, 0.5);
+        border: 1px solid;
+        border-color: rgba(138, 43, 226, 0.5);
+        border-radius: 50px;
+        box-shadow: 5px 5px 10px rgba(138, 43, 226, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: rgb(150, 77, 232);
+        color: white;
+        cursor: pointer;
+        border: 1px solid;
+        border-color: rgb(150, 77, 232);
+        border-radius: 1px solid;
+      }
+      a:visited {
+        color: rgba(138, 43, 226, 0.7);
+      }
+
+      .sloth {
+        display: block;
+        margin: 0 auto;
+        width: 25%;
+        max-width: 300px;
+      }
+
+      .recipes {
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 50px 50px;
+        max-width: 800px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 40px rgba(138, 43, 226, 0.3);
+      }
+
+      .name {
+        display: block;
+        margin: 50px auto;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        padding: 20px;
+        max-width: 500px;
+        box-shadow: 10px 10px 40px rgba(138, 43, 226, 0.3);
+      }
+    </style>
+  </head>
+  <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/420/original/la_croix_fruit_gif.gif?1640233860"
+    alt="La Croix can with spinning smiley fruit"
+    class="spinningFruitLeft"
+  />
+  <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/420/original/la_croix_fruit_gif.gif?1640233860"
+    alt="La Croix can with spinning smiley fruit"
+    class="spinningFruitRight"
+  />
+
+  <body>
+    <h1>
+      Hype up
+      <br />
+      your hydration
+      <br />
+      🥂
+    </h1>
+    <h2>with sparkling water</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/330/original/redhead_spindrift.jpg?1640056809"
+      class="spindriftYellow"
+      alt="A woman with a Spindrift drink"
+    />
+    <p class="emojis">😊🍹😊🍹😊🍹😊🍹😊🍹😊🍹</p>
+    <p class="description">
+      We break through the surface of sameness in
+      <span style="font-style: italic; font-weight: bold">sparkling waters</span
+      >. Crafted by our in-house flavor artists to be the truest expression of
+      each fruit, our waters marry
+      <span style="font-style: italic; font-weight: bold">
+        crisp carbonation
+      </span>
+      with custom
+      <span style="font-style: italic; font-weight: bold"
+        >authentic flavors</span
+      >
+      to create uniquely refreshing waters that awaken the senses.
+    </p>
+    <button>Join the party!</button>
+
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/441/original/sloth_la_croix.gif?1640280124"
+      alt="Smiling sloth holding la croix"
+      class="sloth"
+      <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/324/original/cheers_la_croix.jpg?1640056073"
+      class="cheers"
+      alt="Cheers with La Croix"
+    />
+
+    <p class="recipes">
+      Click
+      <a href="https://www.lacroixwater.com/recipes/" target="_blank">here</a>
+      for refresing recipe ideas!
+
+      <br />
+      <span style="font-style: italic; font-weight: 600">Enjoy!</span>🍹
+    </p>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/440/original/recipe.gif?1640279863"
+      class="movingCan"
+      alt="Can of la croix"
+    />
+
+    <hr />
+    <h3 class="name">
+      <strong>Page coded by:</strong> <em>Rebecca Pingel</em>
+    </h3>
+
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        if (name.length) {
+          alert("Hi, " + name + "! Check your inbox for updates soon! 😊🍹");
+        } else {
+          alert("We hope to hear from you soon! 😊🍹");
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
